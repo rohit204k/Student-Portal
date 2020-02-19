@@ -1,4 +1,4 @@
-package com.info204k.demo;
+package com.info204k.demo.model;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
