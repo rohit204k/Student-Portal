@@ -13,12 +13,26 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<name>Student-Test-Portal</name>
 	<description>Assignment</description>
-
 	<properties>
 		<java.version>11</java.version>
 	</properties>
-
 	<dependencies>
+	<!-- https://mvnrepository.com/artifact/javax.xml.bind/jaxb-api -->
+<dependency>
+    <groupId>javax.xml.bind</groupId>
+    <artifactId>jaxb-api</artifactId>
+    </dependency>
+<!-- https://mvnrepository.com/artifact/org.javassist/javassist -->
+<dependency>
+    <groupId>org.javassist</groupId>
+    <artifactId>javassist</artifactId>
+    <version>3.25.0-GA</version>
+</dependency>
+<!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-validator -->
+    <dependency>
+        <groupId>org.hibernate.validator</groupId>
+        <artifactId>hibernate-validator</artifactId>
+        </dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-jpa</artifactId>
@@ -27,26 +41,31 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
-		
 		<!-- https://mvnrepository.com/artifact/org.springframework.data/spring-data-rest-repository -->
 <dependency>
     <groupId>org.springframework.data</groupId>
     <artifactId>spring-data-rest-repository</artifactId>
     <version>1.0.0.RELEASE</version>
 </dependency>
-		
 		<dependency>
 			<groupId>com.h2database</groupId>
 			<artifactId>h2</artifactId>
 			<scope>runtime</scope>
 		</dependency>
+		
+		<dependency>
+		    <groupId>org.apache.tomcat</groupId>
+		    <artifactId>tomcat-jasper</artifactId>
+		    <version>9.0.30</version>
+		</dependency>
+		
+		
 		<!-- https://mvnrepository.com/artifact/org.springframework.data/spring-data-rest-repository -->
 <dependency>
     <groupId>org.springframework.data</groupId>
     <artifactId>spring-data-rest-repository</artifactId>
     <version>1.0.0.RELEASE</version>
 </dependency>
-		
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
@@ -59,7 +78,6 @@
 			</exclusions>
 		</dependency>
 	</dependencies>
-
 	<build>
 		<plugins>
 			<plugin>
@@ -68,5 +86,4 @@
 			</plugin>
 		</plugins>
 	</build>
-
 </project>
