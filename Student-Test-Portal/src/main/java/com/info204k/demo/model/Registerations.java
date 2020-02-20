@@ -1,45 +1,21 @@
  package com.info204k.demo.model;
 
-import java.sql.Date;
-
+import javax.persistence.EmbeddedId;
 import javax.persistence.Entity;
-import javax.persistence.ManyToMany;
 
 @Entity
 public class Registerations {
 	
-	@ManyToMany
-	private Student studID;
-	@ManyToMany
-	private Courses CourseID;
-	private Date date;
+	@EmbeddedId
+	private RegistrationsIdentifier regID;
 	private int score;
 	private String TestsTaken;
 	
-	
-	public Student getStudID() {
-		return studID;
+	public RegistrationsIdentifier getRegID() {
+		return regID;
 	}
-	public void setStudID(Student studID) {
-		this.studID = studID;
-	}
-	public Courses getCourseID() {
-		return CourseID;
-	}
-	public void setCourseID(Courses courseID) {
-		CourseID = courseID;
-	}
-	public Date getDate() {
-		return date;
-	}
-	public void setDate(Date date) {
-		this.date = date;
-	}
-	public String getTestsTaken() {
-		return TestsTaken;
-	}
-	public void setTestsTaken(String testsTaken) {
-		TestsTaken = testsTaken;
+	public void setRegID(RegistrationsIdentifier regID) {
+		this.regID = regID;
 	}
 	public int getScore() {
 		return score;
@@ -47,13 +23,17 @@ public class Registerations {
 	public void setScore(int score) {
 		this.score = score;
 	}
+	public String getTestsTaken() {
+		return TestsTaken;
+	}
+	public void setTestsTaken(String testsTaken) {
+		TestsTaken = testsTaken;
+	}
 	
 	
 	@Override
 	public String toString() {
-		return "Registerations [studID=" + studID + ", CourseID=" + CourseID + ", date=" + date + ", TestsTaken="
-				+ TestsTaken + ", score=" + score + "]";
-	
-
+		return "Registerations [regID=" + regID + ", score=" + score + ", TestsTaken=" + TestsTaken + "]";
 	}
+	
 }

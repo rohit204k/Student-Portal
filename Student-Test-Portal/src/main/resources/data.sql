@@ -10,7 +10,7 @@ INSERT INTO STUDENT values("1EL16DW009","James","Mary","James.Mary@yahoo.com","j
 INSERT INTO STUDENT values("1EL16DW010","Williams","Judy","Williams.Judy@yahoo.com","williams");
 
 INSERT INTO COURSES values("16DW01","English","24-02-2020");
-INSERT INTO COURSES values("16DW02","Hindi","26-02-2020");
+INSERT INTO COURSES values("16DW02","Hindi","29-02-2020");
 INSERT INTO COURSES values("16DW03","Kannada","28-02-2020");
 INSERT INTO COURSES values("16DW04","Social Science","25-02-2020");
 INSERT INTO COURSES values("16DW05","Maths","26-02-2020");
