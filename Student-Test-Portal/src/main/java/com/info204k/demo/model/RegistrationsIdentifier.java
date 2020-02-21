@@ -12,12 +12,7 @@ public class RegistrationsIdentifier implements Serializable
 	private Courses CourseID; 
 	private Date date;
 	
-	public RegistrationsIdentifier(Student studID, Courses courseID, Date date) {
-		super();
-		this.studID = studID;
-		CourseID = courseID;
-		this.date = date;
-	}
+	
 	
 	public Student getStudID() {
 		return studID;

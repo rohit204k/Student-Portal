@@ -6,8 +6,9 @@
   
   import com.info204k.demo.model.Student;
   
-  @RepositoryRestResource() public interface StudentRepo extends
-  JpaRepository<Student,String>{
+  @RepositoryRestResource() 
+  public interface StudentRepo extends JpaRepository<Student,String>
+  {
   
   
   }
