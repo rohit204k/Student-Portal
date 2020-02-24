@@ -10,7 +10,6 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.info204k.demo.model.Courses;
-import com.info204k.demo.model.Student;
 import com.info204k.demo.repo.CoursesRepo;
 
 @RestController

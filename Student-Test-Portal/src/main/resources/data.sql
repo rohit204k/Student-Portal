@@ -1,15 +1,15 @@
 
 
-INSERT INTO STUDENT values('1EL16DW001','Ross','Stanley','Ross.Stanley@gmail.com','ross');
-INSERT INTO STUDENT values('1EL16DW002','Ross','Stuart','Ross.Stuart@gmail.com','ross');
-INSERT INTO STUDENT values('1EL16DW003','Edwards','Peter','Edwards.Peter@gmail.com','edwards');
-INSERT INTO STUDENT values('1EL16DW004','Thompson','Bob','Thompson.Bob@gmail.com','thompson');
-INSERT INTO STUDENT values('1EL16DW005','Smythe','Carol','Smythe.Carol@gmail.com','smythe');
-INSERT INTO STUDENT values('1EL16DW006','Hayes','Evelyn','Hayes.Evelyn@yahoo.com','hayes');
-INSERT INTO STUDENT values('1EL16DW007','Evans','Michael','Evans.Michael@yahoo.com','evans');
-INSERT INTO STUDENT values('1EL16DW008','Raveen','Lemont','Raveen.Lemont@yahoo.com','raveen');
-INSERT INTO STUDENT values('1EL16DW009','James','Mary','James.Mary@yahoo.com','james');
-INSERT INTO STUDENT values('1EL16DW010','Williams','Judy','Williams.Judy@yahoo.com','williams');
+INSERT INTO STUDENT(studID,FNAME,LNAME,EMAIL,password) values('1EL16DW001','Ross','Stanley','Ross.Stanley@gmail.com','ross');
+INSERT INTO STUDENT(studID,FNAME,LNAME,EMAIL,password) values('1EL16DW002','Ross','Stuart','Ross.Stuart@gmail.com','ross');
+INSERT INTO STUDENT(studID,FNAME,LNAME,EMAIL,password) values('1EL16DW003','Edwards','Peter','Edwards.Peter@gmail.com','edwards');
+INSERT INTO STUDENT(studID,FNAME,LNAME,EMAIL,password) values('1EL16DW004','Thompson','Bob','Thompson.Bob@gmail.com','thompson');
+INSERT INTO STUDENT(studID,FNAME,LNAME,EMAIL,password) values('1EL16DW005','Smythe','Carol','Smythe.Carol@gmail.com','smythe');
+INSERT INTO STUDENT(studID,FNAME,LNAME,EMAIL,password) values('1EL16DW006','Hayes','Evelyn','Hayes.Evelyn@yahoo.com','hayes');
+INSERT INTO STUDENT(studID,FNAME,LNAME,EMAIL,password) values('1EL16DW007','Evans','Michael','Evans.Michael@yahoo.com','evans');
+INSERT INTO STUDENT(studID,FNAME,LNAME,EMAIL,password) values('1EL16DW008','Raveen','Lemont','Raveen.Lemont@yahoo.com','raveen');
+INSERT INTO STUDENT(studID,FNAME,LNAME,EMAIL,password) values('1EL16DW009','James','Mary','James.Mary@yahoo.com','james');
+INSERT INTO STUDENT(studID,FNAME,LNAME,EMAIL,password) values('1EL16DW010','Williams','Judy','Williams.Judy@yahoo.com','williams');
 
 INSERT INTO COURSES values('16DW01','English','2020-02-24');
 INSERT INTO COURSES values('16DW02','Hindi','2020-02-29');
