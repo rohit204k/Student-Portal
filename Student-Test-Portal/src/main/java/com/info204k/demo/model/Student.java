@@ -1,7 +1,8 @@
 
   package com.info204k.demo.model;
   
-  import javax.persistence.Entity; 
+  import javax.persistence.Column;
+import javax.persistence.Entity; 
   import javax.persistence.Id;
   
   @Entity
@@ -9,10 +10,14 @@
 	 
 	 
 	  @Id
+	  
 	  private String studID;
-	  private String fName; 
+	  @Column(name="FNAME")
+	  private String fName;
+	  @Column(name="LNAME")
 	  private String lName;
-	  private String email; 
+	  @Column(name="EMAIL")
+	  private String email;
 	  private String password;
 		
 	  public String getStudID() {
