@@ -8,7 +8,9 @@
   
   @Entity public class Courses {
 
-	  @Id private String CourseID; private String CourseName;
+	  @Id 
+	  private String CourseID; 
+	  private String CourseName;
 
 	  @Column(unique = true) 
 	  private Date date; 

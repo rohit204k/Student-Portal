@@ -11,7 +11,7 @@ import javax.persistence.Entity;
 	 
 	  @Id
 	  
-	  private String studID;
+	  private  String studID;
 	  @Column(name="FNAME")
 	  private String fName;
 	  @Column(name="LNAME")

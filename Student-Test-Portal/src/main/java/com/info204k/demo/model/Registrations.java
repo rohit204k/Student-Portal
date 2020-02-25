@@ -18,28 +18,28 @@ public class Registrations implements Serializable
 
 	@Id
 	@ManyToOne()
-	private String studID;
+	private Student studID;
 	@Id
 	@ManyToOne()
-	private String CourseID; 
+	private Courses CourseID; 
 	@Id
 	private Date date;
 	private int score; 
 	private	String TestTaken;
 	
-	public String getStudID() {
+	public Student getStudID() {
 		return studID;
 	}
 
-	public void setStudID(String studID) {
+	public void setStudID(Student studID) {
 		this.studID = studID;
 	}
 
-	public String getCourseID() {
+	public Courses getCourseID() {
 		return CourseID;
 	}
 
-	public void setCourseID(String courseID) {
+	public void setCourseID(Courses courseID) {
 		CourseID = courseID;
 	}
 

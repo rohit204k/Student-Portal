@@ -7,23 +7,23 @@ import javax.persistence.ManyToOne;
 public class RegistrationsIdentifier implements Serializable
 {
 	@ManyToOne()
-	private String studID;
+	private Student studID;
 	@ManyToOne()
-	private String CourseID; 
+	private Courses CourseID; 
 	private Date date;
 	
 	
 	
-	public String getStudID() {
+	public Student getStudID() {
 		return studID;
 	}
-	public void setStudID(String studID) {
+	public void setStudID(Student studID) {
 		this.studID = studID;
 	}
-	public String getCourseID() {
+	public Courses getCourseID() {
 		return CourseID;
 	}
-	public void setCourseID(String courseID) {
+	public void setCourseID(Courses courseID) {
 		CourseID = courseID;
 	}
 	public Date getDate() {
