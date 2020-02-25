@@ -6,24 +6,24 @@ import javax.persistence.ManyToOne;
   
 public class RegistrationsIdentifier implements Serializable
 {
-	@ManyToOne(cascade = CascadeType.ALL)
-	private Student studID;
-	@ManyToOne(cascade = CascadeType.ALL)
-	private Courses CourseID; 
+	@ManyToOne()
+	private String studID;
+	@ManyToOne()
+	private String CourseID; 
 	private Date date;
 	
 	
 	
-	public Student getStudID() {
+	public String getStudID() {
 		return studID;
 	}
-	public void setStudID(Student studID) {
+	public void setStudID(String studID) {
 		this.studID = studID;
 	}
-	public Courses getCourseID() {
+	public String getCourseID() {
 		return CourseID;
 	}
-	public void setCourseID(Courses courseID) {
+	public void setCourseID(String courseID) {
 		CourseID = courseID;
 	}
 	public Date getDate() {

@@ -11,33 +11,35 @@ import javax.persistence.ManyToMany;
 import javax.persistence.ManyToOne;
 
 @Entity
-//@IdClass(RegistrationsIdentifier.class)
+@IdClass(RegistrationsIdentifier.class)
 public class Registrations implements Serializable
 {
+	
+
 	@Id
-	@ManyToOne(cascade = CascadeType.ALL)
-	private Student studID;
+	@ManyToOne()
+	private String studID;
 	@Id
-	@ManyToOne(cascade = CascadeType.ALL)
-	private Courses CourseID; 
+	@ManyToOne()
+	private String CourseID; 
 	@Id
 	private Date date;
 	private int score; 
 	private	String TestTaken;
 	
-	public Student getStudID() {
+	public String getStudID() {
 		return studID;
 	}
 
-	public void setStudID(Student studID) {
+	public void setStudID(String studID) {
 		this.studID = studID;
 	}
 
-	public Courses getCourseID() {
+	public String getCourseID() {
 		return CourseID;
 	}
 
-	public void setCourseID(Courses courseID) {
+	public void setCourseID(String courseID) {
 		CourseID = courseID;
 	}
 
@@ -68,13 +70,12 @@ public class Registrations implements Serializable
 	{ 
 		TestTaken = testsTaken;
 	}
-
-	//@Override
-	//public String toString() {
-		//return "Registerations [studID=" + studID + ", CourseID=" + CourseID + ", date=" + date + ", score=" + score
-			//	+ ", TestsTaken=" + TestsTaken + "]";
-	//}
-  
+	
+	@Override
+	public String toString() {
+		return "Registrations [studID=" + studID + ", CourseID=" + CourseID + ", date=" + date + ", score=" + score
+				+ ", TestTaken=" + TestTaken + "]";
+	}
 	
   }
  

@@ -12,7 +12,7 @@ INSERT INTO STUDENT(studID,FNAME,LNAME,EMAIL,password) values('1EL16DW009','Jame
 INSERT INTO STUDENT(studID,FNAME,LNAME,EMAIL,password) values('1EL16DW010','Williams','Judy','Williams.Judy@yahoo.com','williams');
 
 INSERT INTO COURSES values('16DW01','English','2020-02-24');
-INSERT INTO COURSES values('16DW02','Hindi','2020-02-29');
+INSERT INTO COURSES values('16DW02','Sanskrit','2020-02-29');
 INSERT INTO COURSES values('16DW03','Kannada','2020-02-28');
 INSERT INTO COURSES values('16DW04','Social Science','2020-02-25');
 INSERT INTO COURSES values('16DW05','Maths','2020-02-26');
