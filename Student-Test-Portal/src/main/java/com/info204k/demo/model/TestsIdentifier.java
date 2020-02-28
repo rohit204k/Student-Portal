@@ -1,29 +1,26 @@
 package com.info204k.demo.model;
 import java.io.Serializable; import java.sql.Date;
 
-import javax.persistence.CascadeType;
 import javax.persistence.ManyToOne;
   
-public class RegistrationsIdentifier implements Serializable
+public class TestsIdentifier implements Serializable
 {
-	@ManyToOne()
-	private Student studID;
-	@ManyToOne()
-	private Courses CourseID; 
+	private String studID;
+	private String CourseID; 
 	private Date date;
 	
 	
 	
-	public Student getStudID() {
+	public String getStudID() {
 		return studID;
 	}
-	public void setStudID(Student studID) {
+	public void setStudID(String studID) {
 		this.studID = studID;
 	}
-	public Courses getCourseID() {
+	public String getCourseID() {
 		return CourseID;
 	}
-	public void setCourseID(Courses courseID) {
+	public void setCourseID(String courseID) {
 		CourseID = courseID;
 	}
 	public Date getDate() {

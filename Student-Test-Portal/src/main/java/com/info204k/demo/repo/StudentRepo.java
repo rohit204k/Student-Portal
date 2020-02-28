@@ -8,7 +8,8 @@
   
   //@RepositoryRestResource(collectionResourceRel="student",path="student")
   public interface StudentRepo extends JpaRepository<Student,String> {
-  
+	 
+	  int countBystudID(String studID);
   
  }
  
