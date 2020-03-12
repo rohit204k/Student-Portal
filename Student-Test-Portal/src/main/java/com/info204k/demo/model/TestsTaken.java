@@ -1,4 +1,5 @@
 package com.info204k.demo.model;
+
 import java.io.Serializable;
 import java.sql.Date;
 
@@ -12,17 +13,16 @@ import javax.persistence.ManyToOne;
 
 @Entity
 @IdClass(TestsIdentifier.class)
-public class TestsTaken implements Serializable
-{
+public class TestsTaken implements Serializable {
 
 	@Id
 	private String studID;
 	@Id
-	private String CourseID; 
+	private String CourseID;
 	@Id
 	private Date date;
-	private int score; 
-	
+	private int score;
+
 	public String getStudID() {
 		return studID;
 	}
@@ -47,22 +47,18 @@ public class TestsTaken implements Serializable
 		this.date = date;
 	}
 
-	public int getScore() 
-	{ 
+	public int getScore() {
 		return score;
-	} 
-	
-	public void setScore(int score) 
-	{ 
-		this.score =score;
-	} 
-	
-	
+	}
+
+	public void setScore(int score) {
+		this.score = score;
+	}
+
 	@Override
 	public String toString() {
 		return "Registrations [studID=" + studID + ", CourseID=" + CourseID + ", date=" + date + ", score=" + score
-				+  "]";
+				+ "]";
 	}
-	
-  }
- 
+
+}
