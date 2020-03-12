@@ -40,10 +40,18 @@ public class QuestionController {
 
 	@GetMapping(path = "/{subject}")
 	@ResponseBody
+<<<<<<< HEAD
 	public ArrayList<String> getQuestions(@PathVariable("subject") String subject) {
 		List<Questions> subque = repo.findAllBySubject(subject);
 		ArrayList<String> ques = new ArrayList<String>();
 		for (Questions q : subque)
+=======
+	public ArrayList<String> getQuestions(@PathVariable("subject") String subject)
+	{		
+		List<Questions> subque=repo.findAllBySubject(subject);
+		ArrayList<String> ques=new ArrayList<String>();
+		for (Questions q:subque)
+>>>>>>> ab3d448eeeeae8fa15ef9aef968c55506e0ef8b7
 			ques.add(q.getQuestion());
 		return ques;
 	}
