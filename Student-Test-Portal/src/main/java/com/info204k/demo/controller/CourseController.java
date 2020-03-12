@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.info204k.demo.model.Courses;
 import com.info204k.demo.repo.CoursesRepo;
-@CrossOrigin(origins = { "http://localhost:3000"})
+@CrossOrigin(origins = { "/**"}) 
 @RestController
 public class CourseController 
 {
