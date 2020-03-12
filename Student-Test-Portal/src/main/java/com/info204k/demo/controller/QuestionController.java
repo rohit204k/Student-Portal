@@ -7,6 +7,7 @@ import java.util.Optional;
 import org.aspectj.weaver.patterns.TypePatternQuestions.Question;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -16,7 +17,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.info204k.demo.model.Questions;
 import com.info204k.demo.repo.QuestionRepo;
-
+@CrossOrigin(origins = { "/**"})
 @RestController
 public class QuestionController {
 
