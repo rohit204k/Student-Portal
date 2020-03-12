@@ -6,6 +6,7 @@ import java.util.Optional;
 
 import org.aspectj.weaver.patterns.TypePatternQuestions.Question;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -22,14 +23,14 @@ public class QuestionController {
 	@Autowired
 	QuestionRepo repo;
 	
-	@GetMapping(path="/questions")
+	@GetMapping(path = "/questions", consumes = MediaType.APPLICATION_JSON_VALUE)
 	public List<Questions> getQuestions()
 	{
 		return repo.findAll();
 	}
 	
 	
-	@PostMapping("/questions")
+	 @PostMapping(path="/questions",consumes=MediaType.APPLICATION_JSON_VALUE, produces=MediaType.APPLICATION_JSON_VALUE)
 	public Questions addQuestion(@RequestBody Questions question)
 	{
 		repo.save(question);
