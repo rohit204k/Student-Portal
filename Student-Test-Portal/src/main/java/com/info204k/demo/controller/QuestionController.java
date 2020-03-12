@@ -42,7 +42,6 @@ public class QuestionController {
 	@ResponseBody
 	public ArrayList<String> getQuestions(@PathVariable("subject") String subject)
 	{		
-	 	//return repo.findAllBySubject(subject);
 		List<Questions> subque=repo.findAllBySubject(subject);
 		ArrayList<String> ques=new ArrayList<String>();
 		for (Questions q:subque)
