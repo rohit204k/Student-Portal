@@ -2,11 +2,8 @@ package com.info204k.demo.controller;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Optional;
-
-import org.aspectj.weaver.patterns.TypePatternQuestions.Question;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.MediaType;
+//import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -27,12 +24,15 @@ public class QuestionController {
 	@Autowired
 	QuestionRepo repo;
 
-	@GetMapping(consumes = MediaType.APPLICATION_JSON_VALUE)
+	// consumes = MediaType.APPLICATION_JSON_VALUE
+	@GetMapping()
 	public List<Questions> getQuestions() {
 		return repo.findAll();
 	}
 
-	@PostMapping(consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
+	// consumes = MediaType.APPLICATION_JSON_VALUE, produces =
+	// MediaType.APPLICATION_JSON_VALUE
+	@PostMapping()
 	public Questions addQuestion(@RequestBody Questions question) {
 		return repo.save(question);
 
@@ -40,7 +40,7 @@ public class QuestionController {
 
 	@GetMapping(path = "/{subject}")
 	@ResponseBody
-	public ArrayList<String> getQuestions1(@PathVariable("subject") String subject) {
+	public ArrayList<String> getQuestions(@PathVariable("subject") String subject) {
 		List<Questions> subque = repo.findAllBySubject(subject);
 		ArrayList<String> ques = new ArrayList<String>();
 		for (Questions q : subque)

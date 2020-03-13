@@ -10,14 +10,6 @@ import javax.persistence.Id;
 @Entity
 public class Courses {
 
-<<<<<<< HEAD
-	@Override
-	public String toString() {
-		return "Courses [CourseID=" + CourseID + ", CourseName=" + CourseName + ", date=" + date + "]";
-	}
-
-=======
->>>>>>> dec7140559e15d49cf651c243f51ca17b72cb6c2
 	@Id
 	private String CourseID;
 	private String CourseName;
@@ -48,13 +40,9 @@ public class Courses {
 	public void setDate(Date date) {
 		this.date = date;
 	}
-<<<<<<< HEAD
-=======
 
 	@Override
 	public String toString() {
 		return "Courses [CourseID=" + CourseID + ", CourseName=" + CourseName + ", date=" + date + "]";
 	}
-
->>>>>>> dec7140559e15d49cf651c243f51ca17b72cb6c2
 }

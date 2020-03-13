@@ -54,12 +54,7 @@ public class TestsTaken implements Serializable {
 
 	@Override
 	public String toString() {
-<<<<<<< HEAD
 		return "TestsTaken [studID=" + studID + ", CourseID=" + CourseID + ", date=" + date + ", score=" + score + "]";
-=======
-		return "Registrations [studID=" + studID + ", CourseID=" + CourseID + ", date=" + date + ", score=" + score
-				+ "]";
->>>>>>> dec7140559e15d49cf651c243f51ca17b72cb6c2
 	}
 
 }
