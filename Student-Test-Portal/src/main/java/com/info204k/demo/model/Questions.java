@@ -10,7 +10,7 @@ public class Questions {
 	private String question;
 	private String a,b,c,d;
 	private char ans;
-	private String subject;
+	private String CourseName;
 	
 	public int getQno() {
 		return qno;
@@ -55,15 +55,15 @@ public class Questions {
 		this.ans = ans;
 	}
 	public String getSubject() {
-		return subject;
+		return CourseName;
 	}
 	public void setSubject(String subject) {
-		this.subject = subject;
+		this.CourseName = subject;
 	}
 	@Override
 	public String toString() {
 		return "Questions [qno=" + qno + ", question=" + question + ", a=" + a + ", b=" + b + ", c=" + c + ", d=" + d
-				+ ", ans=" + ans + ", subject=" + subject + "]";
+				+ ", ans=" + ans + ", CourseName=" + CourseName + "]";
 	}
 
 }

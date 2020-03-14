@@ -38,9 +38,9 @@ public class QuestionController {
 
 	}
 
-	@GetMapping(path = "/{subject}")
+	@GetMapping(path = "/{CourseName}")
 	@ResponseBody
-	public ArrayList<String> getQuestions(@PathVariable("subject") String subject) {
+	public ArrayList<String> getQuestions(@PathVariable("CourseName") String subject) {
 		List<Questions> subque = repo.findAllBySubject(subject);
 		ArrayList<String> ques = new ArrayList<String>();
 		for (Questions q : subque)
