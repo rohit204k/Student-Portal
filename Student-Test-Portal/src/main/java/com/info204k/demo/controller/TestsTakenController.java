@@ -1,7 +1,6 @@
 package com.info204k.demo.controller;
 
 import java.util.List;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.web.bind.annotation.CrossOrigin;
@@ -21,7 +20,6 @@ public class TestsTakenController {
 	@Autowired
 	RegistrationsRepo repo;
 
-	// consumes = MediaType.APPLICATION_JSON_VALUE
 	@GetMapping()
 	@Query("select date from REGISRATIONS")
 	public List<TestsTaken> getRegistrations() {

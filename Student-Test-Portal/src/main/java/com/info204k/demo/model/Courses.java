@@ -1,8 +1,6 @@
 
 package com.info204k.demo.model;
 
-import java.sql.Date;
-
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
@@ -14,9 +12,7 @@ public class Courses {
 	private String CourseID;
 	private String CourseName;
 
-	@Column(unique = true)
-	private Date date;
-
+	
 	public String getCourseID() {
 		return CourseID;
 	}
@@ -33,16 +29,9 @@ public class Courses {
 		CourseName = courseName;
 	}
 
-	public Date getDate() {
-		return date;
-	}
-
-	public void setDate(Date date) {
-		this.date = date;
-	}
 
 	@Override
 	public String toString() {
-		return "Courses [CourseID=" + CourseID + ", CourseName=" + CourseName + ", date=" + date + "]";
+		return "Courses [CourseID=" + CourseID + ", CourseName=" + CourseName + "]";
 	}
 }

@@ -1,10 +1,10 @@
 package com.info204k.demo.controller;
 
 import java.util.List;
+
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
-//import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -24,7 +24,6 @@ public class StudentController {
 	@Autowired
 	StudentRepo repo;
 
-	// consumes = MediaType.APPLICATION_JSON_VALUE
 	@GetMapping()
 	public List<Student> getStudents() {
 		return repo.findAll();
@@ -36,8 +35,6 @@ public class StudentController {
 		return repo.findTopBystudID(studID);
 	}
 
-	// consumes = MediaType.APPLICATION_JSON_VALUE, produces =
-	// MediaType.APPLICATION_JSON_VALUE
 	@PostMapping()
 	public Student addStudent(@RequestBody Student student) {
 		return repo.save(student);

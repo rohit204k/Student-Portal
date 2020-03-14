@@ -16,8 +16,6 @@ public class TestsTaken implements Serializable {
 	private String studID;
 	@Id
 	private String CourseID;
-	@Id
-	private Date date;
 	private int score;
 
 	public String getStudID() {
@@ -36,14 +34,6 @@ public class TestsTaken implements Serializable {
 		CourseID = courseID;
 	}
 
-	public Date getDate() {
-		return date;
-	}
-
-	public void setDate(Date date) {
-		this.date = date;
-	}
-
 	public int getScore() {
 		return score;
 	}
@@ -54,7 +44,7 @@ public class TestsTaken implements Serializable {
 
 	@Override
 	public String toString() {
-		return "TestsTaken [studID=" + studID + ", CourseID=" + CourseID + ", date=" + date + ", score=" + score + "]";
+		return "TestsTaken [studID=" + studID + ", CourseID=" + CourseID + ", score=" + score + "]";
 	}
 
 }
