@@ -1,0 +1,40 @@
+INSERT INTO STUDENT(studID,FNAME,LNAME,EMAIL,password) values('1EL16DW001','Ross','Stanley','Ross.Stanley@gmail.com','ross');
+INSERT INTO STUDENT(studID,FNAME,LNAME,EMAIL,password) values('1EL16DW002','Ross','Stuart','Ross.Stuart@gmail.com','ross');
+INSERT INTO STUDENT(studID,FNAME,LNAME,EMAIL,password) values('1EL16DW003','Edwards','Peter','Edwards.Peter@gmail.com','edwards');
+INSERT INTO STUDENT(studID,FNAME,LNAME,EMAIL,password) values('1EL16DW004','Thompson','Bob','Thompson.Bob@gmail.com','thompson');
+INSERT INTO STUDENT(studID,FNAME,LNAME,EMAIL,password) values('1EL16DW005','Smythe','Carol','Smythe.Carol@gmail.com','smythe');
+INSERT INTO STUDENT(studID,FNAME,LNAME,EMAIL,password) values('1EL16DW006','Hayes','Evelyn','Hayes.Evelyn@yahoo.com','hayes');
+INSERT INTO STUDENT(studID,FNAME,LNAME,EMAIL,password) values('1EL16DW007','Evans','Michael','Evans.Michael@yahoo.com','evans');
+INSERT INTO STUDENT(studID,FNAME,LNAME,EMAIL,password) values('1EL16DW008','Raveen','Lemont','Raveen.Lemont@yahoo.com','raveen');
+INSERT INTO STUDENT(studID,FNAME,LNAME,EMAIL,password) values('1EL16DW009','James','Mary','James.Mary@yahoo.com','james');
+INSERT INTO STUDENT(studID,FNAME,LNAME,EMAIL,password) values('1EL16DW010','Williams','Judy','Williams.Judy@yahoo.com','williams');
+
+INSERT INTO COURSES values('16DW01','English','2020-02-24');
+INSERT INTO COURSES values('16DW02','Sanskrit','2020-02-29');
+INSERT INTO COURSES values('16DW03','Kannada','2020-02-28');
+INSERT INTO COURSES values('16DW04','Social Science','2020-02-25');
+INSERT INTO COURSES values('16DW05','Maths','2020-02-26');
+INSERT INTO COURSES values('16DW06','Science','2020-02-27');
+
+insert into TESTS_TAKEN(STUDID,COURSEID,DATE,SCORE) values('1EL16DW001','16DW02','2017-03-21','75');
+insert into TESTS_TAKEN(STUDID,COURSEID,DATE,SCORE) values('1EL16DW002','16DW06','2018-07-17','86');
+insert into TESTS_TAKEN(STUDID,COURSEID,DATE,SCORE) values('1EL16DW003','16DW03','2019-06-16','48');
+insert into TESTS_TAKEN(STUDID,COURSEID,DATE,SCORE) values('1EL16DW004','16DW01','2016-05-23','79');
+insert into TESTS_TAKEN(STUDID,COURSEID,DATE,SCORE) values('1EL16DW005','16DW04','2018-02-04','81');
+insert into TESTS_TAKEN(STUDID,COURSEID,DATE,SCORE) values('1EL16DW006','16DW02','2019-07-09','56');
+insert into TESTS_TAKEN(STUDID,COURSEID,DATE,SCORE) values('1EL16DW007','16DW05','2017-11-30','63');
+insert into TESTS_TAKEN(STUDID,COURSEID,DATE,SCORE) values('1EL16DW008','16DW06','2016-10-25','37');
+insert into TESTS_TAKEN(STUDID,COURSEID,DATE,SCORE) values('1EL16DW009','16DW02','2016-04-13','78');
+insert into TESTS_TAKEN(STUDID,COURSEID,DATE,SCORE) values('1EL16DW010','16DW01','2017-12-26','96');
+insert into TESTS_TAKEN(STUDID,COURSEID,DATE,SCORE) values('1EL16DW001','16DW01','2016-09-01','50');
+insert into TESTS_TAKEN(STUDID,COURSEID,DATE,SCORE) values('1EL16DW002','16DW05','2017-05-30','89');
+insert into TESTS_TAKEN(STUDID,COURSEID,DATE,SCORE) values('1EL16DW003','16DW04','2018-12-11','15');
+insert into TESTS_TAKEN(STUDID,COURSEID,DATE,SCORE) values('1EL16DW004','16DW06','2019-10-13','60');
+insert into TESTS_TAKEN(STUDID,COURSEID,DATE,SCORE) values('1EL16DW005','16DW02','2016-06-04','35');
+insert into TESTS_TAKEN(STUDID,COURSEID,DATE,SCORE) values('1EL16DW006','16DW02','2019-07-25','90');
+insert into TESTS_TAKEN(STUDID,COURSEID,DATE,SCORE) values('1EL16DW007','16DW03','2018-01-17','23');
+insert into TESTS_TAKEN(STUDID,COURSEID,DATE,SCORE) values('1EL16DW008','16DW03','2016-02-29','78');
+insert into TESTS_TAKEN(STUDID,COURSEID,DATE,SCORE) values('1EL16DW009','16DW01','2017-10-23','98');
+insert into TESTS_TAKEN(STUDID,COURSEID,DATE,SCORE) values('1EL16DW010','16DW06','2018-04-12','38');
+
+INSERT INTO QUESTIONS (qno,ans,question,subject) values('1','b','A batsman scored 110 runs which included 3 boundaries and 8 sixes. What percent of his total score did he make by running between the wickets?','Aptitude');
