@@ -5,8 +5,9 @@ import javax.persistence.Id;
 
 @Entity
 public class Questions {
-	@Id
+	
 	private int qno;
+	@Id
 	private String question;
 	private String a,b,c,d;
 	private char ans;

@@ -10,6 +10,7 @@ public class Courses {
 
 	@Id
 	private String CourseID;
+	
 	private String CourseName;
 
 	
